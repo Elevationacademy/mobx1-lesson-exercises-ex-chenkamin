@@ -20,6 +20,7 @@ class Item extends Component {
             it should display the item name and location
             it should have both an edit button and a delete button
       */} 
+      {this.props.item.name}
             </div>)
     }
 }
