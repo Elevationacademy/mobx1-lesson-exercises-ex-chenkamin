@@ -14,13 +14,13 @@ class Item extends Component {
       }
     render() {
         return (
-            <div className = "">
+            <div className ={this.props.item.completed ? "crossed": null}>
       {/*   your code here
             each item should be in an input checkbox
             it should display the item name and location
             it should have both an edit button and a delete button
       */} 
-      {this.props.item.name}
+      <input type="checkbox" value={this.props.item}/>{this.props.item.name}
             </div>)
     }
 }
